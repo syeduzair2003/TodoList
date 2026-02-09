@@ -52,13 +52,13 @@ const TestTodo = () => {
         setTasksList(updatedTasks);
     };
 
-    // const deleteTask = (index) => {
-    //     const updatedList = tasksList.filter((_, i) => i !== index);
-    //     setTasksList(updatedList);
-    //     if (editIndex === index) {
-    //         setEditIndex(null);
-    //         setTask('');
-    //     }
+    const deleteTask = (index) => {
+        const updatedList = tasksList.filter((_, i) => i !== index);
+        setTasksList(updatedList);
+        if (editIndex === index) {
+            setEditIndex(null);
+            setTask('');
+        }
 
     };
     return (
