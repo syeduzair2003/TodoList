@@ -1,0 +1,168 @@
+body {
+  background-color: #672ed3;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center;
+  height: 100vh; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background-color: #9778ce;
+  backdrop-filter: blur(20px);
+  width: 400px;
+  height: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(26, 16, 80, 0.938);
+  animation: fade-in 0.5s ease-in-out;
+  
+
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+#cont1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none; 
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.add-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fa0d2dc9;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.5s, background 0.8s;
+}
+
+
+button:hover {
+  background: #ff416c;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+h4 {
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 1px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  color: white;
+}
+.task-list {
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.del-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.del-btn:hover {
+  background-color: #ff0000;
+}
+
+.btn-group {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+
+input {
+  border: 2px solid transparent;
+}
+
+input:focus {
+  border: 2px solid #aa66ea;
+}
